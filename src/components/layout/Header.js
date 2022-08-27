@@ -108,7 +108,7 @@ const Header = ({
                         tag="a"
                         color="primary"
                         wideMobile
-                        href="https://127.0.0.1:3000/login"
+                        href="/login"
                       >
                         Sign in
                       </Button>
@@ -116,7 +116,7 @@ const Header = ({
                   </ul>
                   <ul className="list-reset header-nav-right">
                     <li>
-                    <Button tag="a" color="dark" wideMobile href="https://127.0.0.1:3000/signUp">
+                    <Button tag="a" color="dark" wideMobile href="/signUp">
                     Sign up
                     </Button>
                     </li>
