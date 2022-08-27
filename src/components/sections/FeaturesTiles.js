@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import ButtonGroup from '../elements/ButtonGroup';
+import Button from '../elements/Button';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -44,19 +46,27 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
+    title: 'Authentic',
     paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
   };
 
   return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
+    <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
-          <div className={tilesClasses}>
+         
+          <ButtonGroup  style={{display:'flex',justifyContent:'center'}}>
+            <Button
+              tag="a"
+              color="primary"
+              wideMobile
+              href="https://github.com/mohdnuman/authentic"
+            >
+              View on Github
+            </Button>
+          </ButtonGroup>
+          {/* <div className={tilesClasses}>
 
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
@@ -190,7 +200,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
