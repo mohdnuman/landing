@@ -1,18 +1,18 @@
-import React from 'react';
-import classNames from 'classnames';
-import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-import Image from '../elements/Image';
-import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
+import React from "react";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
+import SectionHeader from "./partials/SectionHeader";
+import Image from "../elements/Image";
+import ButtonGroup from "../elements/ButtonGroup";
+import Button from "../elements/Button";
 
 const propTypes = {
-  ...SectionTilesProps.types
-}
+  ...SectionTilesProps.types,
+};
 
 const defaultProps = {
-  ...SectionTilesProps.defaults
-}
+  ...SectionTilesProps.defaults,
+};
 const FeaturesTiles = ({
   className,
   topOuterDivider,
@@ -24,30 +24,30 @@ const FeaturesTiles = ({
   pushLeft,
   ...props
 }) => {
-
   const outerClasses = classNames(
-    'features-tiles section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "features-tiles section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
   );
 
   const innerClasses = classNames(
-    'features-tiles-inner section-inner pt-0',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
+    "features-tiles-inner section-inner pt-0",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
   );
 
   const tilesClasses = classNames(
-    'tiles-wrap center-content',
-    pushLeft && 'push-left'
+    "tiles-wrap center-content",
+    pushLeft && "push-left"
   );
 
   const sectionHeader = {
-    title: 'Authentic',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: "Authentic",
+    paragraph:
+      "We build web3 products which solves customers problem using blockchain.",
   };
 
   return (
@@ -55,8 +55,8 @@ const FeaturesTiles = ({
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
-         
-          <ButtonGroup  style={{display:'flex',justifyContent:'center'}}>
+
+          <ButtonGroup style={{ display: "flex", justifyContent: "center" }}>
             <Button
               tag="a"
               color="primary"
@@ -205,7 +205,7 @@ const FeaturesTiles = ({
       </div>
     </section>
   );
-}
+};
 
 FeaturesTiles.propTypes = propTypes;
 FeaturesTiles.defaultProps = defaultProps;
