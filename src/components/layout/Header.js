@@ -108,7 +108,7 @@ const Header = ({
                         tag="a"
                         color="primary"
                         wideMobile
-                        href="https://authentic-eight.vercel.app/login"
+                        href="https://stalwart-blini-a776f7.netlify.app/login"
                       >
                         Sign in
                       </Button>
@@ -116,7 +116,7 @@ const Header = ({
                   </ul>
                   <ul className="list-reset header-nav-right">
                     <li>
-                    <Button tag="a" color="dark" wideMobile href="https://authentic-eight.vercel.app/signUp">
+                    <Button tag="a" color="dark" wideMobile href="https://stalwart-blini-a776f7.netlify.app/signUp">
                     Sign up
                     </Button>
                     </li>
